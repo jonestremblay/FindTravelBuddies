@@ -1,0 +1,106 @@
+.registerLogo{
+    padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.form-group{
+    opacity: 75%;
+    margin: 5px;
+}
+
+#register-form {
+    float: left;
+    position: relative;
+    /* height: 100vh; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 6%;
+    width: 600px;
+}
+
+#btnRegister{
+    margin-top: 25px;
+    font-family: SpicyPumpkin;
+    font-size: 40px;
+    width: 160px;
+    border-radius: 18px;
+    opacity: 80%;
+}
+
+
+
+
+  /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 150px;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    min-width : 100%;
+    min-height: 100%;
+}
+
+#footer{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: #282828;
+    bottom: 0;
+    left: 0;
+}
+
+.flexbox-container{
+    display: flex;
+}
+
+
+#copyright{
+    font-family: SpicyPumpkin;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.flexbox-item{
+    margin-top: 25px;
+}
+
+.flexbox-item-1{ /* Copyright*/
+    float :left;
+    width: 1000px;
+}
+
+#footerText{
+    width: 600px;
+    height: 100px;
+    margin-top : 25px;
+    margin-left: 250px;
+    font-family: Myrlissa;
+    font-size: 80px;
+    float: right;
+}
+#footerLogo{
+    margin-top: 10px;
+    float: left;
+}
+
+/* ---------------------------END OF FOOTER AND VIDEO CSS-------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "SpicyPumpkin"; /*a name to be used later*/
+    src: url('../ttf/Spicy\ Pumpkin.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Myrlissa"; /*a name to be used later*/
+    src: url('../ttf/Myrlissa\ -\ Personal\ Use.otf'); /*URL to font*/
+}
