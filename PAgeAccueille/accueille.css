@@ -1,0 +1,17 @@
+#accueilleLogo{
+	height: 120px;
+	width: 200px;
+	  margin-top: 10px;
+    	float: left;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.carousel-item {
+	height: 400px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}

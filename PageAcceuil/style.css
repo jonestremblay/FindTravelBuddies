@@ -1,0 +1,142 @@
+#carouselExampleSlidesOnly .carousel-item {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+/*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}*/
+
+#carouselExampleSlidesOnly .carousel-item-1{
+   background-image: url("https://cdn.pixabay.com/photo/2015/10/12/15/01/mountain-984083_1280.jpg") center no-repeat; 
+   max-height: 600px;
+}
+#carouselExampleSlidesOnly .carousel-item-2{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/26/01/27/bicycle-2540174_1280.jpg") center no-repeat; 
+    max-height: 600px;
+
+
+ }
+#carouselExampleSlidesOnly .carousel-item-3{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_1280.jpg") center no-repeat; 
+    max-height: 600px;
+
+
+ }
+
+
+#accueilleLogo{
+	height: 120px;
+	width: 200px;
+	  margin-top: 10px;
+    	float: left;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+.loginLogo{
+    padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.input-group{
+    opacity: .75;
+}
+
+.input-group-text{
+    width: 54px;
+}
+
+#login-form {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnLogin{
+    margin-top: 25px;
+    font-family: SpicyPumpkin;
+    font-size: 40px;
+    width: 160px;
+    border-radius: 18px;
+    opacity: 80%;
+}
+
+
+
+
+  /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 150px;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    min-width : 100%;
+    min-height: 100%;
+}
+
+.footer{
+    background-color: #282828;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.flexbox-container{
+    display: flex;
+}
+
+
+#copyright{
+    font-family: SpicyPumpkin;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.flexbox-item{
+    margin-top: 25px;
+}
+
+.flexbox-item-1{ /* Copyright*/
+    float :left;
+    width: 1000px;
+}
+
+#footerText{
+    width: 600px;
+    height: 100px;
+    margin-top : 25px;
+    margin-left: 250px;
+    font-family: Myrlissa;
+    font-size: 80px;
+    float: right;
+}
+#footerLogo{
+    margin-top: 10px;
+    float: left;
+}
+
+/* ---------------------------END OF FOOTER AND VIDEO CSS-------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "SpicyPumpkin"; /*a name to be used later*/
+    src: url('../ttf/Spicy\ Pumpkin.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Myrlissa"; /*a name to be used later*/
+    src: url('../ttf/Myrlissa\ -\ Personal\ Use.otf'); /*URL to font*/
+}
