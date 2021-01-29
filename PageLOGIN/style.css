@@ -32,7 +32,35 @@
 
 
 
-  /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
+  /* ------FOOTER AND VIDEO CSS -------------------------------------------------------------------------------------- */
+
+#navSettings{
+    margin-left: auto;
+    font-family: Myrlissa;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+#navSearch{
+    border-radius: 20px;
+}
+
+#navLogin, #navGallery {
+    
+    font-family: Myrlissa;
+    font-size: 60px;
+}
+
+.container-fluid{
+    display: flex;
+}
+
+#navLogo{
+    height: 120px;
+    width: 225px;
+}
+
+
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -47,6 +75,7 @@
     bottom : 0;
     min-width : 100%;
     min-height: 100%;
+    z-index: -1;
 }
 
 .footer{

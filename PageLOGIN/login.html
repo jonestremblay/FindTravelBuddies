@@ -13,10 +13,43 @@
     
 <div id="page-container">
     <div id="content-wrap">
+
+        <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #282828;">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+                <img  src="../media/logo/whiteLogo250.png" id="navLogo" width="250px">
+              </div>
+              <div class="row">
+                <li class="nav-item nav-item-row1">
+                  <a id="navGallery" style="color: white; text-decoration: none;" href="#">
+                  ( Gallery ) </a>
+                </li>
+              </div>
+              <div class="row" id="col1">
+                <form class="d-flex nav-item nav-item-row2">
+                  <input class="form-control me-2" id="navSearch" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="border-radius: 25px;"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="row" id="col1">
+                <li class="nav-item nav-item-row1">
+                  <a id="navLogin" style="color: white; text-decoration: none;" href="#">
+                  ( Login )</a>
+                </li>
+              </div>
+              <div class="row" id="col3">
+                <li class="nav-item nav-item-row2">
+                  <a id="navSettings" style="color: white;" href="#">
+                    <i class="fas fa-user-cog fa-xs"></i></a>
+                </li>
+              </div>
+            </div>
+          </nav>
+
         <video autoplay muted loop id="myVideo" poster="../media/img/beach.png">
             <source src="../media/vid/login-beach.mp4" type="video/mp4">
         </video>
-    
+        
         <div class="container h-100" id="login-form">
             <div class="d-flex justify-content-center h-100">
                 <div class="user_card">
