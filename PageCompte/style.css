@@ -1,6 +1,52 @@
 
+html{
+    width: 100%;
+    height: 100%;
+}
 
+body{
+    background-color: #133432;
+    background-image: url("../media/img/settings.jpg");
+}
+.card{
+    margin-top: 150px;
+    margin-bottom: 125px;
+    margin-left: 30%;
+    
+}
+#v-pills-tab, #v-pills-tabContent{
+    position: relative;
+    margin-top: 250px;
+    margin-left : 100px;
+    background-color: transparent;
+    color : white;
+    
+}
+#v-pills-password-tab, #v-pills-profile-tab, #v-pills-picture-tab, #v-pills-social-tab{
+    
+   border : 2px solid black;
+   margin : 5px;
+   margin-left: -200px;
+   background-color : teal;
+   color: white;
+}
 
+.form-group{
+    opacity: 75%;
+    margin: 5px;
+}
+
+#register-form {
+    float: left;
+    position: relative;
+    /* height: 100vh; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 6%;
+    width: 600px;
+}
 /* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
 
  #navSettings{
