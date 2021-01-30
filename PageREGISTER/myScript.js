@@ -1,6 +1,17 @@
 function newUserCardModal(showHide){
     if (showHide == "show"){
+        // trying validation
+        $("#username").addClass("is-invalid");
+        $("#usernameFeedback").addClass("invalid-feedback");
+        $("#usernameFeedback").html("Min. 6 char.");
+
+        // card
         $("#userCardModalTitle").html("Bienvenue " + users[0].username);
+        $("#cardPicture").attr("src", "../media/img/avatar/fatima.jpg")
+        $("#cardFullName").html(users[0].firstName + " " + users[0].lastName);  
+        $("#cardText").html(users[0].tellUsMore);  
+        $("#cardAgeGender").html(users[0].age + " ans | " + users[0].gender);  
+        $("#cardRegionCountry").html(users[0].region + "  | " + users[0].country);  
         $("#userCardModal").modal("toggle");
     }
     if (showHide == "hide"){

@@ -68,12 +68,12 @@ $(function(){
     $("#navConnection").attr("href", "../PageLogin/login.html");
 })
 
-function settingsWithoutLogin(showHide){
+function toggleModal(showHide){
     if (showHide == "show"){
-        $("#myModal").modal("toggle");
+        $("#userCardModal").modal("toggle");
     }
     if (showHide == "hide"){
-        $("#myModal").modal("hide");
+        $("#userCardModal").modal("hide");
     }
 }
 
@@ -87,3 +87,38 @@ function getUserByUsername(username){
     }
 }
 
+
+function checkUsernameAvailability(username){
+    // Check the unicity of the username
+    // Also check it's length
+    if (username.length() >= 4 && username.length() <= 25){
+        for (i =0; i < users.length; i++){
+            if (user[i].username = username){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+function checkMinAge(age){
+    // As the Children's Online Protection Rule (COPPA) imposes.
+    // Also, we don't trust ppl claiming they're over 120 years old.
+    if (age < 13 || age > 120){
+        return false;
+    }
+}
+
+function checkPasswordSecurity(password){
+    if (password.length() >= 8){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function comparePasswords(password, confirmPassword){
+    if (password == confirmPassword){
+        return true;
+    }
+}

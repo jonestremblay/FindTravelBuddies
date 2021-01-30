@@ -30,9 +30,22 @@
     opacity: 80%;
 }
 
+.invalid-feedback{
+    max-width: 100%;
+    padding: .25rem .5rem;
+    margin-top: 5px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: rgba(220,53,69,.9);
+    border-radius: .25rem;
+}
 
-
-
+.modal-content {
+    background-color: #212529;
+ }
+ .list-group-item{
+     border :none;
+ }
   /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
 
 #navSettings{
