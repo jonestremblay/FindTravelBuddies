@@ -77,6 +77,8 @@ function settingsWithoutLogin(showHide){
     }
 }
 
+
+
 function getUserByUsername(username){
     for (i = 0; i < users.length; i++){
         if (users[i].username == username){

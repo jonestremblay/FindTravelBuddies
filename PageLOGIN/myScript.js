@@ -12,16 +12,13 @@ function seConnecter(){
     if (user == "" || pass == ""){
         alert("Please enter a username and a password.")
     } 
-    
     else if (user == getUserByUsername(user).username){
         if (pass == getUserByUsername(user).password){
             connected = true;
             window.location.replace("../PageAcceuil/index.html");
         } 
 
-    } 
-
-    else {
+    } else {
         alert("Bad credentials.");
     }
     

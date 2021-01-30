@@ -26,6 +26,24 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="userCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="userCardModalTitle">Bienvenue ...</h5>
+        </div>
+        <div class="modal-body">
+            NEW USER        CARD
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="settingsWithoutLogin('hide')" class="btn btn-primary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     
 <div id="page-container">
     <div id="content-wrap">
@@ -75,32 +93,34 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center form_container">
-                        <form action="../PageLOGIN/login.html">
+
+
+                        <form action="" class="needs-validation" method="POST" novalidate>
                             <div class="d-flex flex-row">
                                 <div class="form-group flex-column">
-                                    <input type="text" id="firstName" class="form-control" value="" placeholder="First name">
+                                    <input type="text" id="firstName" class="form-control" value="" placeholder="First name" required>
                                 </div>
                                 <div class="form-group flex-column">
-                                    <input type="text" id="lastName" class="form-control" value="" placeholder="Last name">
+                                    <input type="text" id="lastName" class="form-control" value="" placeholder="Last name" required>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row">
                                 <div class="form-group  col-xs-2 input_age">
-                                    <input type="text" id="age" class="form-control" value="" placeholder="Age">
+                                    <input type="text" id="age" class="form-control" value="" placeholder="Age" required>
                                 </div>
                                 <div class="form-group  col-xs-4 input_gender">
-                                    <select type="text" id="gender" class="form-control" placeholder="Gender">
-                                        <option selected>Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                        <option>Other</option>
-                                        <option>I rather not tell</option>
+                                    <select type="text" id="gender" class="form-control" placeholder="Gender" required>
+                                        <option value="" selected>Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                        <option value="NoTell">I rather not tell</option>
                                     </select>
                                 </div>
                                 <div class="form-group flex-column">
-                                    <select type="text" id="country" class="form-control" placeholder="Country">
-                                        <option selected>Country</option>
+                                    <select type="text" id="country" class="form-control" placeholder="Country" required>
+                                        <option value="" selected>Country</option>
                                         <option value="Afganistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
                                         <option value="Algeria">Algeria</option>
@@ -348,16 +368,16 @@
                                     <input type="text" id="region" class="form-control" value="" placeholder="Region">
                                 </div>
                                 <div class="form-group flex-column">
-                                    <input type="text" id="username" class="form-control" value="" placeholder="Username">
+                                    <input type="text" id="username" class="form-control" value="" placeholder="Username" required>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row">
                                 <div class="form-group flex-column">
-                                    <input type="password" id="password" class="form-control" placeholder="Password">
+                                    <input type="password" id="password" class="form-control" placeholder="Password" required>
                                 </div>
                                 <div class="form-group flex-column">
-                                    <input type="password" id="password2" class="form-control" placeholder="Confirm password">
+                                    <input type="password" id="password2" class="form-control" placeholder="Confirm password" required>
                                 </div>
                             </div>
 
@@ -369,7 +389,7 @@
 
 
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="submit" action class="btn btn-primary btn-rounded" id="btnRegister">Register</button>
+                                <button type="submit" onclick="newUserCardModal('show')" class="btn btn-primary btn-rounded" id="btnRegister">Register</button>
                             </div>
                         </form>
                     </div>
