@@ -60,11 +60,11 @@ body{
     border-radius: 20px;
 }
 
-#navLogin, #navGallery {
+#navConnection, #navGallery {
     
     font-family: Myrlissa;
     font-size: 60px;
-    col
+
 }
 
 .container-fluid{
