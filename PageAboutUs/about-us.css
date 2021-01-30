@@ -1,0 +1,132 @@
+
+
+
+#imgAbout{
+    height: 570px;
+    width: 680px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+h5{
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 30px;
+    margin-bottom: 60px;
+    
+}
+
+
+.container{
+    display: flex;
+    
+}
+
+body{
+    background-color: lavender;
+}
+
+#banner{
+    border: none;
+}
+
+/* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
+
+#navSettings{
+    margin-left: auto;
+    font-family: Myrlissa;
+    font-size: 40px;
+    margin-right: 50px;
+    
+}
+
+#navSearch{
+    border-radius: 20px;
+}
+
+#navLogin, #navGallery {
+    
+    font-family: Myrlissa;
+    font-size: 60px;
+    
+}
+
+.container-fluid{
+    display: flex;
+}
+
+#navLogo{
+    height: 120px;
+    width: 225px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 150px;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    min-width : 100%;
+    min-height: 100%;
+}
+
+.footer{
+    background-color: #282828;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.flexbox-container{
+    display: flex;
+}
+
+
+#copyright{
+    font-family: SpicyPumpkin;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.flexbox-item{
+    margin-top: 25px;
+}
+
+.flexbox-item-1{ /* Copyright*/
+    float :left;
+    width: 1000px;
+}
+
+#footerText{
+    width: 600px;
+    height: 100px;
+    font-family: Myrlissa;
+    font-size: 60px;
+    float: right;
+}
+#footerLogo{
+    margin-top: 10px;
+    float: left;
+}
+
+
+
+/* ---------------------------END OF FOOTER AND VIDEO CSS-------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "SpicyPumpkin"; /*a name to be used later*/
+    src: url('../ttf/Spicy\ Pumpkin.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Myrlissa"; /*a name to be used later*/
+    src: url('../ttf/Myrlissa\ -\ Personal\ Use.otf'); /*URL to font*/
+}

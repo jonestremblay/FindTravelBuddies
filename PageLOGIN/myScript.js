@@ -11,12 +11,18 @@ function seConnecter(){
     let pass = $("#inputPass").val();
     if (user == "" || pass == ""){
         alert("Please enter a username and a password.")
-    } else if (user == getUserByUsername(user).username){
+    } 
+    
+    else if (user == getUserByUsername(user).username){
         if (pass == getUserByUsername(user).password){
             connected = true;
             window.location.replace("../PageAcceuil/index.html");
+        } 
 
-        }
+    } 
+
+    else {
+        alert("Bad credentials.");
     }
     
 }
