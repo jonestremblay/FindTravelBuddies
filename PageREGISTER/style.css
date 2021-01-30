@@ -47,7 +47,6 @@
      border :none;
  }
   /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
-
 #navSettings{
     margin-left: auto;
     font-family: Myrlissa;
@@ -92,15 +91,11 @@
     z-index: -1;
 }
 
-#footer{
-    position: absolute;
-    height: 150px;
-    width: 100%;
+.footer{
     background-color: #282828;
     bottom: 0;
-    left: 0;
+    width: 100%;
 }
-
 .flexbox-container{
     display: flex;
 }

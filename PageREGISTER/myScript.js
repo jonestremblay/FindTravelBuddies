@@ -7,7 +7,7 @@ function newUserCardModal(showHide){
 
         // card
         $("#userCardModalTitle").html("Bienvenue " + users[0].username);
-        $("#cardPicture").attr("src", "../media/img/avatar/fatima.jpg")
+        $("#cardPicture").attr("src", "../media/img/avatar/dicaprio.jpg")
         $("#cardFullName").html(users[0].firstName + " " + users[0].lastName);  
         $("#cardText").html(users[0].tellUsMore);  
         $("#cardAgeGender").html(users[0].age + " ans | " + users[0].gender);  
