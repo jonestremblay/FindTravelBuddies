@@ -13,7 +13,7 @@
     <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div id="settingsModalContent" class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalCenterTitle">ACCESS DENIED</h5>
         </div>
@@ -30,14 +30,14 @@
   <!-- Modal -->
 <div class="modal fade" id="userCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div id="cardModalContent" class="modal-content">
         <div class="modal-header justify-content-center">
           <h5 class="modal-title" id="userCardModalTitle">Bienvenue ...</h5>
         </div>
         <div class="modal-body">
             <div class="d-flex justify-content-center">
                 <div class="card text-center text-white bg-dark" style="width: 18rem; border: none;">
-                    <img id="cardPicture" src="../media/img/exAvatar.jpg" class="card-img-top" alt="..." style="border-radius: 50%;">
+                    <img id="cardPicture" src="../media/img/avatar/userCircleWhite.svg" class="card-img-top cardPicture" alt="...">
                     <div class="card-body text-white bg-dark">
                     <h5 id="cardFullName" class="card-title">His Name</h5>
                     <p id="cardText" class="card-text">The "Tell us more" part. 110 charc max.</p>
@@ -118,22 +118,30 @@
                     <div class="d-flex justify-content-center form_container">
 
 
-                        <form action="" class="needs-validation" method="POST" novalidate>
+                        <form class="needs-validation" novalidate>
                             <div class="d-flex flex-row">
-                                <div class="form-group flex-column has-feedback">
+                                <div class="form-group flex-column input_firstName has-feedback">
                                     <input type="text" id="firstName" class="form-control" value="" placeholder="First name" required>
+                                    <div id="firstNameValidation" >
+                                      
+                                    </div>
                                 </div>
-                                <div class="form-group flex-column has-feedback">
+                                <div class="form-group flex-column input_lastName has-feedback">
                                     <input type="text" id="lastName" class="form-control" value="" placeholder="Last name" required>
+                                    <div id="lastNameValidation">
+                                      
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row">
-                                <div class="form-group  col-xs-2 input_age  has-feedback">
+                                <div class="form-group flex-column  col-xs-2 input_age  has-feedback">
                                     <input type="text" id="age" class="form-control" value="" placeholder="Age" required>
-                                    
+                                    <div id="ageValidation">
+                                     
+                                    </div>
                                 </div>
-                                <div class="form-group  col-xs-4 input_gender  has-feedback">
+                                <div class="form-group flex-column  col-xs-4 input_gender  has-feedback">
                                     <select type="text" id="gender" class="form-control" placeholder="Gender" required>
                                         <option value="" selected>Gender</option>
                                         <option value="Male">Male</option>
@@ -141,8 +149,11 @@
                                         <option value="Other">Other</option>
                                         <option value="NoTell">I rather not tell</option>
                                     </select>
+                                    <div id="genderValidation">
+                                      
+                                    </div>
                                 </div>
-                                <div class="form-group flex-column  has-feedback">
+                                <div class="form-group flex-column input_country has-feedback">
                                     <select type="text" id="country" class="form-control" placeholder="Country" required>
                                         <option value="" selected>Country</option>
                                         <option value="Afganistan">Afghanistan</option>
@@ -384,39 +395,55 @@
                                         <option value="Venezuela">Venezuela</option>
                                         <option value="Vietnam">Vietnam</option>
                                     </select>
+                                    <div id="countryValidation">
+                                      
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row">
-                                <div class="form-group flex-column  has-feedback">
-                                    <input type="text" id="region" class="form-control" value="" placeholder="Region">
+                                <div class="form-group flex-column  input_region has-feedback">
+                                    <input type="text" id="region" class="form-control" value="" placeholder="Region" required>
+                                    <div id="regionValidation">
+                                     
+                                    </div>
                                 </div>
-                                <div class="form-group flex-column  has-feedback">
+                                <div class="form-group flex-column  input_user has-feedback">
                                     <input type="text" id="username" class="form-control" value="" placeholder="Username" required>
+                                    <div id="userValidation">
+                                     
+                                    </div>
                                 </div>
-                                <div id="usernameFeedback">
-
-                                </div>
+                               
                             </div>
 
                             <div class="d-flex flex-row">
-                                <div class="form-group flex-column  has-feedback">
+                                <div class="form-group flex-column  input_pass has-feedback">
                                     <input type="password" id="password" class="form-control" placeholder="Password" required>
+                                    <div id="passValidation"> 
+
+                                    </div>
                                 </div>
-                                <div class="form-group flex-column  has-feedback">
+                                <div class="form-group flex-column input_pass2  has-feedback">
                                     <input type="password" id="password2" class="form-control" placeholder="Confirm password" required>
+                                    <div id="confirmPassValidation"> 
+
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group  has-feedback">
-                                    <textarea class="form-control" rows="3" placeholder="Tell us more about you :D !"></textarea>
+                                <div class="form-group input_tellUs has-feedback">
+                                    <textarea class="form-control" id="tellUsMore" rows="3" placeholder="Tell us more about you :D !"></textarea>
+                                    <div id="tellUsValidation"> 
+
+                                    </div>
                                 </div>
                             </div>
 
 
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="submit" onclick="newUserCardModal('show')" class="btn btn-primary btn-rounded" id="btnRegister">Register</button>
+                                <button type="button" onclick="newUserCardModal('show')" class="btn btn-primary btn-rounded" id="btnRegister">Register</button>
                             </div>
                         </form>
                     </div>
