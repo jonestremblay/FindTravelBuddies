@@ -81,7 +81,8 @@ function registerValidation(){
   regionValidation(region);
   usernameValidation(user);
   passwordsValidation(pass);
-  comparePasswords(pass2);
+  passwordsValidation(pass2);
+  comparePasswords(pass, pass2);
   tellUsMoreValidation(tellUsMore);
 }
 
@@ -127,7 +128,7 @@ function passwordsValidation(password){
 
 function comparePasswords(password, confirmPassword){
   var msg; 
-  if (!password.match(confirmPassword)){
+  if (password != password.match(confirmPassword)){
       msg = "Passwords doesn't match.";
       $("#password2").addClass("is-invalid");
       $("input_pass2").append($("#confirmPassValidation").text(msg).addClass("invalid-feedback"));
@@ -135,7 +136,6 @@ function comparePasswords(password, confirmPassword){
     $("#password2").removeClass("is-invalid");
     $("#password2").addClass("is-valid");
     countFieldsOK += 1;
-
   }
 }
 

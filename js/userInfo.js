@@ -12,7 +12,7 @@ var jonathan = {
     "username" : "jones",
     "password" : "blackPink",
     "tellUsMore": "Nothing to say.",
-    "photo" : "../media/avatar/exAvatar.jpg"
+    "photo" : "../media/img/avatar/exAvatar.jpg"
 }
 
 var fatima = {
@@ -25,7 +25,7 @@ var fatima = {
     "username" : "fatima",
     "password" : "regasu",
     "tellUsMore": "Vive Haïti.", 
-    "photo" : "../media/avatar/dicaprio.jpg"
+    "photo" : "../media/img/avatar/dicaprio.jpg"
 
 }
 var dicaprio = {
@@ -38,7 +38,7 @@ var dicaprio = {
     "username" : "dicaprio",
     "password" : "nature",
     "tellUsMore": "I'm an actor.",
-    "photo" : "../media/avatar/fatima.jpg"
+    "photo" : "../media/img/avatar/fatima.jpg"
 
 }
 var freeman = {
@@ -51,7 +51,7 @@ var freeman = {
     "username" : "freeman",
     "password" : "morgan",
     "tellUsMore": "Gravitas.",
-    "photo" : "../media/avatar/freeman.jpg"
+    "photo" : "../media/img/avatar/freeman.jpg"
 
 }
 
@@ -85,6 +85,7 @@ function getUserByUsername(username){
     }
     }
 
+currentUser = getUserByUsername("fatima");
 
 
 

@@ -47,6 +47,47 @@ body{
     padding-left: 6%;
     width: 600px;
 }
+
+#buttonsChangePicture{
+   margin-top: 100px;
+
+}
+
+#btnChangePic{
+    margin-bottom : 50px;
+    
+}
+
+#fileButton{
+    padding-bottom: 20px;
+}
+
+.avatarLabel{
+    display: inline-block;
+    text-align: center;
+}
+
+.caption{
+    display: block;
+    font-family: Cream;
+    font-size : 30px;
+}
+
+#avatarPicture1, #avatarPicture2{
+    margin-top: 20px;
+}
+
+.invalid-feedback{
+    max-width: 100%;
+    padding: .25rem .5rem;
+    margin-top: 5px;
+    font-size: .875rem;
+    color: #fff;
+    background-color: rgba(220,53,69,.9);
+    border-radius: .25rem;
+}
+
+
 /* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
 
  #navSettings{
@@ -142,4 +183,9 @@ body{
 @font-face {
     font-family: "Myrlissa"; /*a name to be used later*/
     src: url('../ttf/Myrlissa\ -\ Personal\ Use.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Cream"; /*a name to be used later*/
+    src: url('../ttf/cream-DEMO.otf'); /*URL to font*/
 }

@@ -51,17 +51,17 @@
 
     <div class="d-flex row featurette">
             <div class="col-4">
-                <div class="card text-center text-white bg-dark" style="width: 18rem;">
-                    <img src="../media/img/exAvatar.jpg" class="card-img-top" alt="..." style="border-radius: 50%;">
+                <div class="card text-center text-white bg-dark justify-content-center" style="width: 18rem;">
+                    <img src="../media/img/avatar/userCircleWhite.svg" class="card-img-top" id="profilePicture" alt="..." style="border-radius: 50%; width: 190px; height: 170px; margin-left: 50px; margin-top : 10px; ">
                     <div class="card-body text-white bg-dark">
-                    <h5 class="card-title">His Name</h5>
-                    <p class="card-text">The "Tell us more" part. 110 charc max.</p>
+                    <h5 class="card-title" id="userFullName">His Name</h5>
+                    <p class="card-text" id="tellUsPart">The "Tell us more" part. 110 charc max.</p>
                     </div> 
                     <div class="card-body"> 
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="color: white; background-color: #212529;">Age / Gender</li>
-                            <li class="list-group-item" style="color: white; background-color: #212529;">Region / Country</li>
-                            <li class="list-group-item" style="color: white; background-color: #212529;">What he/she likes...</li>
+                            <li class="list-group-item" style="color: white; background-color: #212529;" id="ageGender">Age / Gender</li>
+                            <li class="list-group-item" style="color: white; background-color: #212529;" id="region">Region</li>
+                            <li class="list-group-item" style="color: white; background-color: #212529;" id="country">Country</li>
                         </ul>
                     </div>
                 
@@ -111,24 +111,33 @@
 
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
-                        <form action="#">
+                        <form action="#" class="needs-validation" novalidate>
                             <div class="d-flex flex-row">
-                                <div class="form-group flex-column">
-                                    <input type="password" id="password" class="form-control" placeholder="Current password">
+                                <div class="form-group flex-column input_pass0 has-feedback">
+                                    <input type="password" id="currentPassword" class="form-control" placeholder="Current password">
+                                    <div id="currentPasswordValidation">
+                                      
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row">
-                                <div class="form-group flex-column">
-                                    <input type="password" id="password" class="form-control" placeholder="New password">
+                                <div class="form-group flex-column input_pass1 has-feedback">
+                                    <input type="password" id="newPassword" class="form-control" placeholder="New password">
+                                    <div id="newPasswordValidation">
+                                      
+                                    </div>
                                 </div>
-                                <div class="form-group flex-column">
-                                    <input type="password" id="password" class="form-control" placeholder="Confirm password">
+                                <div class="form-group flex-column input_pass2 has-feedback">
+                                    <input type="password" id="newPasswordConfirm" class="form-control" placeholder="Confirm password">
+                                    <div id="newPasswordConfirmValidation">
+                                      
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="d-flex justify-content-center mt-3">
-                                <button type="submit" action class="btn btn-primary btn-rounded" id="btnRegister">Change password</button>
+                                <button type="button" onclick="changePassword()" class="btn btn-primary btn-rounded" id="btnRegister">Change password</button>
                             </div>
                         </form>
                             
@@ -434,32 +443,30 @@
 
 
                         <div class="tab-pane fade" id="v-pills-picture" role="tabpanel" aria-labelledby="v-pills-picture-tab">
-                            <div class="d-flex container" style="background-color: #212529;">
+                            <div class="d-flex container justify-content-center" style="background-color: #212529;">
                                 
                                     <div class="col">
-                                        <div class="row">
-                                            <img src="../media/img/exAvatar.jpg" style="border-radius: 50%; max-width: 200px; max-height: 200px;">
-                                            
-                                        </div>
-                                        <div class="row">
-                                            <span>Current</span>
+                                        <div class="row avatarLabel">
+                                            <img src="../media/img/avatar/userCircleWhite.svg"  id="avatarPicture1" style="border-radius: 50%; max-width: 200px; max-height: 200px;">
+                                            <span class="caption">Current</span>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="row">
-                                           <input type="file" class="form-control-file" style="margin-top: 60px;">
-                                           <button type="submit" action class="btn btn-primary btn-rounded" id="btnRegister">Change profile's picture</button>
+                                            <div class="container" id="buttonsChangePicture">
+                                                <button type="submit" action class="btn btn-primary btn-rounded" id="btnChangePic">Change profile's picture</button>
+                                                <input type="file" class="form-control-file" id="fileButton" onchange="loadFile(event)" style="margin-top: 0px;">
+                                            </div>
+                                           
 
                                         </div>
                                     </div>
 
                                     <div class="col">
-                                        <div class="row">
-                                            <i class="fas fa-user-circle fa-8x"></i>
-                                        </div>
-                                        <div class="row">
-                                            <span>Next one</span>
+                                        <div class="row avatarLabel" style="height: 170px;">
+                                            <img src="../media/img/avatar/userCircleWhite.svg" id="avatarPicture2"  style="border-radius: 50%; max-width: 200px;">
+                                            <span class="caption">Next one</span>
                                         </div>
                                     </div>
                                 
@@ -544,7 +551,7 @@
     <!-- /END THE FEATURETTES -->
 
     
-    <footer class="footer" id="footer">
+    <footer class="footer">
         <div class="flexbox-container">
             <img  src="../media/logo/whiteLogoFooter.png" id="footerLogo" width="250px" height="135px">
             <span id="copyright" class="flexbox-item flexbox-item-1">
