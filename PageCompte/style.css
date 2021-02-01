@@ -88,6 +88,25 @@ body{
 }
 
 
+#settingsAlert{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom : -100px;
+    width: auto;
+    line-height: 1;
+}
+#passwordAlertSucess, #profileAlertSucess, #pictureAlertSucess, #socialAlertSucess{
+    display: inline-block;
+    margin-top: 125px;
+    margin-bottom : -200px;
+    width: auto;
+    line-height: 0;
+
+}
+.alertIcon{
+    margin: 5px;
+}
+
 /* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
 
  #navSettings{

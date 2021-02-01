@@ -63,9 +63,7 @@
      border :none;
  }
 
- .cardPicture{
-    filter: invert(100%) sepia(14%) saturate(1296%) hue-rotate(182deg) brightness(105%) contrast(100%);
- }
+ 
   /* ------FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
 #navSettings{
     margin-left: auto;
