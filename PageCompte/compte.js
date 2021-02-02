@@ -156,6 +156,11 @@ function changePassword(){
     $("#tiktokLink").attr("href", tiktok);
 
    popUpAlert("#socialAlertSucess");
+    $("#facebookLink").attr("value", "");
+    $("#instagramLink").attr("value", "");
+    $("#twitterLink").attr("value", "");
+    $("#snapchatLink").attr("value", "");
+    $("#tiktokLink").attr("value", "");
   }
 
   function editProfile(){

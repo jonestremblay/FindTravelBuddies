@@ -11,7 +11,8 @@
 	 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link href="posts.css" rel="stylesheet">
+	<link href="posts.css" rel="stylesheet">
+	<script type="text/javascript" src="posts.js"></script>
 </head>
 <body>
 	<nav id="nav-space" class="navbar navbar-dark navbar-expand-lg" style="background-color: #282828;">
@@ -26,12 +27,6 @@
               <a id="navGallery" style="color: white; text-decoration: none;" href="../PageGallery/gallery.html">
               ( Gallery ) </a>
             </li>
-          </div>
-          <div class="row" id="col1">
-            <form class="d-flex nav-item nav-item-row2">
-              <input class="form-control me-2" id="navSearch" type="search" placeholder="Search a post" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit" style="border-radius: 25px;"><i class="fas fa-search"></i></button>
-            </form>
           </div>
           <div class="row" id="col1">
             <li class="nav-item nav-item-row1">
@@ -97,11 +92,11 @@
   							<button id="btn-explore"  class="btn btn-outline-success" type="button">See more</button>
 							</div>
 					</article>
-					<article>
+					<article >
 						<div class="article-left">
 							<img src="https://media.istockphoto.com/photos/-picture-id698262336?s=612x612" alt="art img">
 						</div>
-						<div class="article-right">
+						<div class="article-right " id="articleIndiana">
 							<h3>Indiana Jones</h3>
 							<p class="meta">
 								<span class="date">December 8, 2020</span>
@@ -261,13 +256,15 @@
 	</div>
 	<footer class="footer" id="footer">
         <div class="flexbox-container">
-            <img  src="../media/logo/whiteLogoFooter.png" id="footerLogo" width="250px" height="135px">
+			<a href="../PageAcceuil/acceuil.html">
+				<img  src="../media/logo/whiteLogoFooter.png" id="footerLogo" width="250px" height="135px">
+			</a>
             <span id="copyright" class="flexbox-item flexbox-item-1">
                 <p style="color: white;">© Fatima Ghaddar & Jonathan Tremblay</p>
             </span>
-            <a class="flexbox-item flexbox-item-2" id="footerText" style="color: white; text-decoration: none;" href="#">
+            <a class="flexbox-item flexbox-item-2" id="footerText" style="color: white; text-decoration: none;" href="../PageAboutUs/about-us.html">
                 (About Us) </a>
-            <a class="flexbox-item flexbox-item-3" id="footerText" style="color: white; text-decoration: none;" href="#">
+            <a class="flexbox-item flexbox-item-3" id="footerText" style="color: white; text-decoration: none;" href="../PageREGISTER/register.html">
                 (Register)</a>
         </div>
     </footer>

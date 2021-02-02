@@ -38,6 +38,15 @@ function settingsWithoutLogin(showHide){
       $("#settingsModal").modal("hide");
   }
 }
+function galleryWithoutLogin(showHide){
+  if (showHide == "show"){
+      $("#galleryModal").modal("toggle");
+  }
+  if (showHide == "hide"){
+      $("#galleryModal").modal("hide");
+  }
+}
+
 
 
 /* function checkValidFieldsCount(){

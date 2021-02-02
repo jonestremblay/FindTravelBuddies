@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    
+    <script src="../js/userInfo.js" type="text/javascript"></script>
 </head>
 <body>
     
@@ -48,7 +48,6 @@
 
 
 
-
 <div id="page-container">
     <div id="content-wrap">
 
@@ -62,12 +61,6 @@
                   <a id="navGallery" style="color: white; text-decoration: none;" href="javascript:galleryWithoutLogin('show');">
                   ( Gallery ) </a>
                 </li>
-              </div>
-              <div class="row" id="col1">
-                <form class="d-flex nav-item nav-item-row2">
-                  <input class="form-control me-2" id="navSearch" type="search" placeholder="Search a post" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" style="border-radius: 25px;"><i class="fas fa-search"></i></button>
-                </form>
               </div>
               <div class="row" id="col1">
                 <li class="nav-item nav-item-row1">
@@ -97,29 +90,33 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-center form_container">
-                        <form>
-                            <div class="input-group mb-3">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-user fa-2x"></i></span>
+                        <form class="needs-validation" novalidate>
+                            <div class="input-group mb-3 ">
+                                    <!-- <span class="input-group-text"><i class="fas fa-user fa-2x"></i></span> -->
+
+                                <div class="form-group input-group-append input_loginUser has-feedback">
+                                    <input id="inputUser" type="text" name="" class="form-control input_user" value="" placeholder="username" style="height: 50px;">
+                                <div id="userLoginValidation">
+
                                 </div>
-                                <input id="inputUser" type="text" name="" class="form-control input_user" value="" placeholder="username">
+                                </div>
+                                
                             </div>
-                            <div class="input-group mb-2">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fas fa-key fa-2x" ></i></span>
+                            <div class="form-group input-group mb-2 ">
+                              <!-- <span class="input-group-text"><i class="fas fa-key fa-2x" style="max-height: 30px;"></i></span> -->
+
+                                <div class="input-group-append input_loginPass has-feedback">
+                                    <input id="inputPass" type="password" name="" class="form-control input_pass" value=""
+                                    placeholder="password" style="height: 50px;">
+                                    <div id="passLoginValidation">
+
+                                    </div>
                                 </div>
-                                <input id="inputPass" type="password" name="" class="form-control input_pass" value=""
-                                    placeholder="password">
+                                    
                                 <div class="input-group-append">
                                   <span class="input-group-text btn-warning"><i onclick="showPasswordField('inputPass', this)" class="fas fa-eye fa-2x" ></i></span>
                                 </div>
                             </div>  
-                            <!-- <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                    <label class="custom-control-label" for="customControlInline">Remember me</label>
-                                </div>
-                            </div> -->
                             <div class="d-flex justify-content-center mt-3 login_container">
                                 <button type="button" action class="btn btn-warning btn-rounded" id="btnLogin">Login</button>
                             </div>
@@ -148,9 +145,7 @@
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="../js/jquery-3.5.1.js" type="text/javascript"></script>
-<script src="../js/connection.js" type="text/javascript"></script>
 
-<script src="../js/userInfo.js" type="text/javascript"></script>
 <script src="login.js" type="text/javascript"></script>
 
 

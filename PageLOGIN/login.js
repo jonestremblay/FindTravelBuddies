@@ -1,7 +1,7 @@
 $(function(){
     $("#btnLogin").on("click", function(){
         seConnecter();
-        connect($("#inputUser").val());
+        currentUser = connect($("#inputUser").val());
        
     });
 });
@@ -35,3 +35,4 @@ function showPasswordField(id, el) {
       el.className = 'fa fa-eye fa-2x showpwd';
     }
   } 
+

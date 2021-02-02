@@ -97,19 +97,46 @@ function getUserByUsername(username){
 function seConnecter(){
     let user = $("#inputUser").val();
     let pass = $("#inputPass").val();
-    if (user == "" || pass == ""){
-        alert("Please enter a username and a password.")
-    } 
-    else if (user == getUserByUsername(user).username){
-        if (pass == getUserByUsername(user).password){
-           
-            window.location.replace("../PageAcceuil/acceuil.html");
-
-        } 
-
+    if (user == ""){
+        var msg = "Enter your username";
+        $("#inputUser").addClass("is-invalid");
+        $("input_loginUser").append($("#userLoginValidation").text(msg).addClass("invalid-feedback"));
     } else {
-        alert("Bad credentials.");
+        $("#inputUser").removeClass("is-invalid");
+        $("#inputUser").addClass("is-valid");
     }
+    if(pass == ""){
+        var msg = "Enter your password";
+        $("#inputPass").addClass("is-invalid");
+        $("input_loginPass").append($("#passLoginValidation").text(msg).addClass("invalid-feedback"));
+    } else {
+        $("#inputPass").removeClass("is-invalid");
+        $("#inputPass").addClass("is-valid");
+    }
+
+    if (getUserByUsername(user) == undefined){
+        var msg = "This username doesn't exist.";
+        $("#inputUser").addClass("is-invalid");
+        $("input_loginUser").append($("#userLoginValidation").text(msg).addClass("invalid-feedback"))
+    } else {
+        $("#inputUser").removeClass("is-invalid");
+        $("#inputUser").addClass("is-valid");
+    }
+
+
+    if (user == getUserByUsername(user).username){ // Si le username est valide
+        if (pass == getUserByUsername(user).password){  // Si le password est le bon
+            console.log(currentUser);
+            currentUser = connect(user);
+            console.log(currentUser);
+
+            window.location.replace("../PageAcceuil/acceuil.html");
+        }  else {
+            var msg = "Incorrect credentials.";
+            $("#inputPass").addClass("is-invalid");
+            $("input_loginPass").append($("#passLoginValidation").text(msg).addClass("invalid-feedback"));
+        }
+    } 
     
 }
 function getConnectedState(){
@@ -176,6 +203,8 @@ function registerValidation(){
     tellUsMoreValidation(tellUsMore);
     checkCurrentPassword(currentPass);
   }
+
+
 
   function checkCurrentPassword(currentPass){
       var msg;
@@ -435,3 +464,16 @@ function registerValidation(){
         }, false)
       })
   })()
+
+  currentUser = getUserByUsername("dicaprio"); 
+function connect(user){
+    connected = true;
+    currentUser = getUserByUsername(user);
+    return currentUser;
+}
+
+function disconnect(){
+    connected = false;
+    currentUser = getUserByUsername("dicaprio"); 
+
+}
