@@ -1,33 +1,51 @@
-
-
-
-#imgAbout{
-    height: 570px;
-    width: 680px;
-    margin-top: 80px;
-    margin-bottom: 60px;
-}
-
-h5{
-    margin-top: 80px;
-    margin-left: 100px;
-    font-size: 30px;
-    margin-bottom: 60px;
-    
-}
-
-
-.container{
-    display: flex;
-    
-}
-
-body{
-    background-color: lavender;
-}
-
 #banner{
-    border: none;
+	margin-top: 40px;
+	width: 1300px;
+	height: 400px;
+	background-image: url('banner.jpg');
+	width: 100%;
+}
+
+
+h3{
+	font-family: Myrlissa;
+	font-size: 60px;
+}
+
+#mt{
+	margin-top:30px; 
+}
+
+#team{
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+img{
+	width: 600px;
+}
+
+#about-us{
+
+	display: flex;
+	
+}
+
+.container1{
+	display: flex;
+}
+
+.about-us{
+	margin-left: 60px;
+}
+
+#font{
+	font-size: 20px;
+}
+
+#title{
+	font-family: Myrlissa;
+	font-size: 60px;
 }
 
 /* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
@@ -116,7 +134,6 @@ body{
     margin-top: 10px;
     float: left;
 }
-
 
 
 /* ---------------------------END OF FOOTER AND VIDEO CSS-------------------------------------------------------------------------- */

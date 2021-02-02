@@ -1,0 +1,156 @@
+img{
+    height: 250px;
+    width: 300px;
+}
+
+.gallery{
+    margin-left: 140px;
+    margin-top: 150px;
+}
+
+.gallery img{
+    transition: 1s;
+    
+    
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+
+#titleG{
+	margin-top: 70px;
+	text-align: center;
+	font-family: Myrlissa;
+	font-size: 100px;
+	margin-bottom: -100px;
+    
+}
+
+#loadMore {
+    margin-left: 700px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+#arrow{
+	margin-left: 1300px;
+}
+
+
+
+
+
+
+
+/* ------NAVBAR, FOOTER AND VIDEO CSS --------------------------------------------------------------------------------------- */
+
+#navSettings{
+    margin-left: auto;
+    font-family: Myrlissa;
+    font-size: 40px;
+    margin-right: 50px;
+    
+}
+
+#navSearch{
+    border-radius: 20px;
+}
+
+#navLogin, #navGallery {
+    
+    font-family: Myrlissa;
+    font-size: 60px;
+    
+}
+
+
+#footer{
+	margin-top: 30px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#navLogo{
+    height: 120px;
+    width: 225px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 150px;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    min-width : 100%;
+    min-height: 100%;
+}
+
+.footer{
+    background-color: #282828;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.flexbox-container{
+    display: flex;
+}
+
+
+#copyright{
+    font-family: SpicyPumpkin;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.flexbox-item{
+    margin-top: 25px;
+}
+
+.flexbox-item-1{ /* Copyright*/
+    float :left;
+    width: 1000px;
+}
+
+#footerText{
+    width: 600px;
+    height: 100px;
+    font-family: Myrlissa;
+    font-size: 60px;
+    float: right;
+}
+#footerLogo{
+    margin-top: 10px;
+    float: left;
+    height: 100px;
+    width: 200px;
+}
+
+
+/* ---------------------------END OF FOOTER AND VIDEO CSS-------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "SpicyPumpkin"; /*a name to be used later*/
+    src: url('../../ttf/Spicy\ Pumpkin.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: "Myrlissa"; /*a name to be used later*/
+    src: url('../../ttf/Myrlissa\ -\ Personal\ Use.otf'); /*URL to font*/
+}
